@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         button1.setTitle("Button1", forState: .Normal)
         
     let button2 = UIButton()
-        button2.setTitle("Some really, really, really long title", forState: .Normal)
+        button2.setTitle("Some really, really, really, really long title", forState: .Normal)
         
     button1.backgroundColor = UIColor.redColor()
     button2.backgroundColor = UIColor.blueColor()
@@ -35,6 +35,8 @@ class ViewController: UIViewController {
         button2.topAnchor.constraintEqualToAnchor(topLayoutGuide.bottomAnchor, constant: 20).active = true
         button2.leadingAnchor.constraintEqualToAnchor(button1.trailingAnchor).active = true
         button2.trailingAnchor.constraintEqualToAnchor(view.trailingAnchor).active = true
+        
+        button2.setContentCompressionResistancePriority(751, forAxis: .Horizontal)
     
     
     }
